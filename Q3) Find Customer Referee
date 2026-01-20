@@ -1,0 +1,25 @@
+A)
+Select name 
+From Customer
+Where referee_id != 2 OR referee_id IS  NULL 
+Order BY id
+
+Wrong:)
+Select name 
+From Customer
+Where id != 2 OR id = null    (Null is unknown )   Correct way to check NULL      -> IS NULL   or    -> IS NOT NULL
+Order BY id
+
+
+Find the names of the customer that are either:
+referred by any customer with id != 2. 
+not referred by any customer.
+Return the result table in any order.
+
+When the problem says
+referred by customer with id != 2
+That translates directly to:
+referee_id != 2
+Not:
+id != 2
+
