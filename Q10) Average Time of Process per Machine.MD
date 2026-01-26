@@ -1,5 +1,5 @@
 A)
-  
+   
 SELECT       A1.machine_id,         
              ROUND(AVG(A2.timestamp-A1.timestamp),3) AS processing_time              
 FROM         Activity AS A1           
@@ -27,5 +27,3 @@ Ask:
 4️⃣ Duration per process = end timestamp − start timestamp.  
   
 5️⃣ We GROUP BY machine_id and take the AVG(duration) to get each machine’s processing time.  
-
---- 
