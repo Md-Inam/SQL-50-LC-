@@ -21,6 +21,11 @@ GROUP BY S.student_id, S.student_name, Sb.Subject_name
 ORDER BY S.student_id, Sb.Subject_name  
  
 --- 
+“number of times”    
+that means COUNT.   
+
+The moment you use COUNT and still want to display normal columns like student and subject, SQL forces you to use GROUP BY.   
+
 
 “number of times each student attended each exam”    
 
