@@ -58,3 +58,25 @@ COUNT
 4    
 All rows treated as one big group.   
 
+
+Example WITH:
+GROUP BY student
+
+SELECT student, COUNT(*) 
+FROM table
+GROUP BY student;
+
+
+SQL makes buckets:
+
+Alice bucket → 3 rows  
+Bob bucket → 1 row  
+  
+Result:  
+  
+| student | count |  
+| ------- | ----- | 
+| Alice   | 3     |  
+| Bob     | 1     |  
+
+
