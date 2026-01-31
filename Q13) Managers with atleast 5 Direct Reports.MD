@@ -45,6 +45,8 @@ WHERE id IN (
 ) 
 
 
+---  
+
 
 Database relationships run on keys  
 You do want the ID in the subquery because IDs link rows. Names are just labels. Labels can repeat. IDs are unique  
